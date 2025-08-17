@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Europe - Explore</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero {
+      position: relative;
+      height: 50vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.4);
+      z-index: 1;
+    }
+
+    .hero h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 2rem;
+      border-radius: 0.75rem;
+    }
+
+    .section-title {
+      font-size: 1.75rem;
+      margin-top: 1rem;
+    }
+
+    .feature-box {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .travel-tips ul {
+      padding-left: 1.2rem;
+    }
+
+    .travel-tips li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  
+
+  
+
+  <!-- Main Content -->
+  <div class="container py-5">
+    <a href="/index.html" class="btn btn-secondary mb-4">← Back</a>
+
+    <p class="lead">
+      Europe is a continent rich in history, culture, architecture, and culinary diversity. It's home to world-famous landmarks, picturesque towns, and stunning natural beauty.
+    </p>
+
+    <img src="https://images.pexels.com/photos/65567/pexels-photo-65567.jpeg" class="img-fluid rounded my-4" alt="Europe">
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="feature-box">
+          <h2 class="section-title">Top Destinations</h2>
+          <ul>
+            <li><strong>France:</strong> Eiffel Tower, French Riviera, and charming countryside.</li>
+            <li><strong>Italy:</strong> Rome's Colosseum, Venice canals, and Tuscany vineyards.</li>
+            <li><strong>Spain:</strong> Barcelona's architecture, Madrid's museums, and Andalusia.</li>
+            <li><strong>Germany:</strong> Berlin's history, Bavaria's castles, and Oktoberfest.</li>
+            <li><strong>Greece:</strong> Santorini, Athens ruins, and Mediterranean beaches.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="feature-box">
+          <h2 class="section-title">Why Visit Europe?</h2>
+          <ul>
+            <li>Rich cultural and historical heritage</li>
+            <li>World-class art, museums, and music</li>
+            <li>Delicious food and wine traditions</li>
+            <li>Efficient transportation and connectivity</li>
+            <li>Varied landscapes: Alps, beaches, forests, and rivers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Travel Tips Section -->
+    <div class="mt-5 travel-tips">
+      <h2 class="section-title">Travel Tips</h2>
+      <ul>
+        <li>Use rail passes (like Eurail) for convenient travel between countries.</li>
+        <li>Learn a few local phrases - many Europeans appreciate the effort.</li>
+        <li>Be aware of cultural differences in tipping, dining, and schedules.</li>
+        <li>Visit during shoulder seasons (spring/fall) for fewer crowds.</li>
+        <li>Keep local currency on hand for small shops or tips.</li>
+      </ul>
+    </div>
+  </div>
+<footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h3>Wanderlust Adventures</h3>
+                    <p>Sharing authentic travel experiences and practical tips to inspire your next adventure.</p>
+                    <div class="social-icons mt-3">
+                        <a href="https://www.facebook.com/wanderlustadventures" class="text-white me-3"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/wanderlustadv" class="text-white me-3"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/wanderlustadventures" class="text-white me-3"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/wanderlustadventures" class="text-white"><i
+                                class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Explore</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="#blog" class="text-white">Blog</a></li>
+                        <li class="mb-2"><a href="#destinations" class="text-white">Destinations</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white">About</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Categories</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/adventure.html" class="text-white">Adventure Travel</a></li>
+                        <li class="mb-2"><a href="/cultural.html" class="text-white">Cultural Experiences</a></li>
+                        <li class="mb-2"><a href="/food.html" class="text-white">Food & Drink</a></li>
+                        <li class="mb-2"><a href="/travel-tips.html" class="text-white">Travel Tips</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe for travel inspiration and tips</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-primary" type="button">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Wanderlust Adventures. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* Header Video */
+.food-header {
+  position: relative;
+  height: 75vh;
+  overflow: hidden;
+}
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.header-content {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+}
+
+/* About Section */
+.about-section h2 {
+  font-weight: bold;
+}
+.about-section ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+/* Destination Cards */
+.destinations-section .card img {
+  height: 220px;
+  object-fit: cover;
+}
+.destinations-section .card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #f8f9fa;
+}
+.testimonials-section .border:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease;
+}
+
+/* CTA Section */
+.cta-section {
+  background-attachment: fixed;
+  padding: 5rem 1rem;
+}
+.cta-section h2,
+.cta-section p {
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+/* Footer */
+footer a:hover {
+  text-decoration: none;
+  color: #ffc107;
+}

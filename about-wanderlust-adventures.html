@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | Wanderlust Adventures</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fefefe;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    /* Navbar styles */
+    .navbar-dark .navbar-nav .nav-link {
+      color: #fff;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #f9c74f;
+    }
+
+    /* Hero with video */
+    .hero {
+      position: relative;
+      height: 55vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .hero h1 {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+    }
+
+    .intro {
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+
+    .section {
+      padding: 2rem 0;
+    }
+
+    .section h2 {
+      font-weight: 600;
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+      border-left: 3px solid #007bff;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -11px;
+      top: 5px;
+      width: 20px;
+      height: 20px;
+      background-color: #007bff;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    .cta {
+      background-color: #e8f0fe;
+      padding: 2rem;
+      border-radius: 1rem;
+      margin-top: 3rem;
+    }
+
+    /* Photo Card Hover Effects */
+    .photo-card {
+      overflow: hidden;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .photo-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 2rem 0;
+      margin-top: 4rem;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    .social-icons i {
+      font-size: 1.25rem;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Wanderlust Adventures</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/index.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="/index.html">Destinations</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Categories</a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/adventure.html">Adventure Travel</a></li>
+            <li><a class="dropdown-item" href="/cultural.html">Cultural Experiences</a></li>
+            <li><a class="dropdown-item" href="/food.html">Food & Drink</a></li>
+            <li><a class="dropdown-item" href="/travel-tips.html">Travel Tips</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/index.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/index.html">Contact</a></li>
+      </ul>
+      <form class="d-flex ms-lg-3 mt-3 mt-lg-0">
+        <input class="form-control me-2" type="search" placeholder="Search...">
+        <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero Section with Background Video -->
+  <div class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="/Welcome to India ! [CINEMATIC TRAVEL FILM].mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <h1>Our Journey: Wanderlust Adventures</h1>
+  </div>
+
+  <!-- Intro -->
+  <div class="container intro">
+    <p class="lead">
+      Founded in 2015, <strong>Wanderlust Adventures</strong> was born from a shared passion for discovering the world and telling its stories. From a humble blog to a global travel platform — this is our journey.
+    </p>
+  </div>
+
+  <!-- Story Section -->
+  <div class="container my-5">
+    <div class="section text-center">
+      <h2 class="mb-5">🚀 From Idea to Adventure</h2>
+      <div class="timeline">
+        <div class="timeline-item mb-4">
+          <h5 class="fw-bold">2015 - The Beginning</h5>
+          <p>What started as a travel blog among friends turned into a shared mission...</p>
+        </div>
+        <div class="timeline-item mb-4">
+          <h5 class="fw-bold">2017 - Building a Community</h5>
+          <p>Our stories started resonating. Readers from around the world began sharing their own journeys...</p>
+        </div>
+        <div class="timeline-item mb-4">
+          <h5 class="fw-bold">2020 - Adapting & Innovating</h5>
+          <p>The pandemic challenged global travel, but we stayed connected...</p>
+        </div>
+        <div class="timeline-item mb-4">
+          <h5 class="fw-bold">Today - A Movement</h5>
+          <p>Wanderlust Adventures has become more than a brand — it's a movement...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Journey Photo Gallery -->
+  <div class="container section">
+    <h2 class="text-center mb-4">📸 Moments from Our Journey</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="photo-card">
+          <img src="https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg" class="img-fluid rounded" alt="Team Hiking">
+          <p class="mt-2 text-center">Exploring Patagonia trails (2018)</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="photo-card">
+          <img src="https://images.pexels.com/photos/11472683/pexels-photo-11472683.jpeg" class="img-fluid rounded" alt="Cultural Exchange">
+          <p class="mt-2 text-center">Connecting with communities in Nepal (2019)</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="photo-card">
+          <img src="https://images.pexels.com/photos/7648507/pexels-photo-7648507.jpeg" class="img-fluid rounded" alt="Virtual Events">
+          <p class="mt-2 text-center">Our first virtual travel workshop (2020)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mission Statement -->
+  <div class="section">
+    <h2><center>🌍 Our Mission</center></h2>
+    <p><center>We believe travel should be <strong>accessible, meaningful, and transformative</strong>...</center></p>
+  </div>
+
+  <!-- Call to Action -->
+  <div class="cta text-center">
+    <h4>Ready to Explore?</h4>
+    <p>Let Wanderlust Adventures be your compass...</p>
+    <a href="/index.html" class="btn btn-primary mt-2">🌎 Start Exploring</a>
+  </div>
+<!-- Back to Homepage Button -->
+<div class="text-center my-5">
+  <a href="/index.html" class="btn btn-outline-primary btn-lg back-home-btn">
+    <i class="fas fa-arrow-left me-2"></i> Back to Homepage
+  </a>
+</div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h3>Wanderlust Adventures</h3>
+          <p>Sharing authentic travel experiences...</p>
+          <div class="social-icons mt-3">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5>Explore</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="/index.html" class="text-white">Home</a></li>
+            <li class="mb-2"><a href="/index.html" class="text-white">Blog</a></li>
+            <li class="mb-2"><a href="/index.html" class="text-white">Destinations</a></li>
+            <li class="mb-2"><a href="/index.html" class="text-white">About</a></li>
+            <li class="mb-2"><a href="/index.html" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5>Categories</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="/adventure.html" class="text-white">Adventure Travel</a></li>
+            <li class="mb-2"><a href="/cultural.html" class="text-white">Cultural Experiences</a></li>
+            <li class="mb-2"><a href="/food.html" class="text-white">Food & Drink</a></li>
+            <li class="mb-2"><a href="/travel-tips.html" class="text-white">Travel Tips</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Newsletter</h5>
+          <p>Subscribe for travel inspiration and tips</p>
+          <form>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Your Email">
+              <button class="btn btn-primary" type="button">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 Wanderlust Adventures. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

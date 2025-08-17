@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Week in Tokyo: Hidden Gems | Michael Chen</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+  background-color: #fcfcfc;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background: url("https://images.pexels.com/photos/17275141/pexels-photo-17275141.jpeg")
+    no-repeat center center/cover;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.hero h1 {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.5);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+/* Meta */
+.blog-meta {
+  text-align: center;
+  color: #6c757d;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Content */
+.content {
+  padding: 2rem 1rem;
+}
+
+.blog-section {
+  margin-bottom: 2.5rem;
+}
+
+/* Tips */
+.tips ul {
+  padding-left: 1.2rem;
+}
+
+.tips li {
+  margin-bottom: 0.5rem;
+}
+
+/* Button */
+.btn-back {
+  margin-top: 3rem;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Wanderlust Adventures</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#destinations">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero with Background Image -->
+  <div class="hero">
+    <h1>A Week in Tokyo: Hidden Gems</h1>
+  </div>
+
+  <!-- Author and Date -->
+  <div class="container blog-meta">
+    <p>By <strong>Michael Chen</strong> • May 22, 2023</p>
+    <p class="text-muted">Beyond the neon lights of Shibuya lies a Tokyo few tourists see. From secret ramen spots to tranquil gardens.</p>
+  </div>
+
+  <!-- Blog Content -->
+  <div class="container content">
+
+    <div class="blog-section">
+      <h2>🏮 Day 1: Discovering Yanaka</h2>
+      <p>My Tokyo adventure began not in Shibuya or Akihabara, but in the quiet, nostalgic streets of Yanaka...</p>
+    </div>
+
+    <div class="blog-section">
+      <h2>🍜 Day 2-3: Underground Eats</h2>
+      <p>I followed a local tip into an unmarked stairwell near Shinjuku Station...</p>
+    </div>
+
+    <div class="blog-section">
+      <h2>🌿 Day 4-5: Green Escapes</h2>
+      <p>Tokyo isn't just skyscrapers. I spent a morning at <strong>Koishikawa Korakuen</strong>...</p>
+    </div>
+
+    <div class="blog-section tips">
+      <h2>💡 Travel Tips</h2>
+      <ul>
+        <li>✅ Start your days early — Tokyo is surprisingly calm at 7 AM.</li>
+        <li>✅ Buy a Suica card — it works for subways, convenience stores, and vending machines.</li>
+        <li>✅ Learn a few Japanese greetings — locals really appreciate it.</li>
+        <li>✅ Use local apps like Navitime and Gurunavi for better recommendations.</li>
+      </ul>
+    </div>
+
+    <div class="blog-section">
+      <h2>✨ Final Thoughts</h2>
+      <p>Tokyo has its neon magic — but beyond that glow is a city of quiet moments and local flavors...</p>
+    </div>
+
+    <!-- Back Button -->
+    <div class="text-center btn-back">
+      <a href="/index.html" class="btn btn-outline-primary">← Back to Home</a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h3>Wanderlust Adventures</h3>
+          <p>Sharing authentic travel experiences and practical tips to inspire your next adventure.</p>
+          <div class="social-icons mt-3">
+            <a href="https://www.facebook.com/wanderlustadventures" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/wanderlustadv" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/wanderlustadventures" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.pinterest.com/wanderlustadventures" class="text-white"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2 mb-4 mb-md-0">
+          <h5>Explore</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#home" class="text-white">Home</a></li>
+            <li class="mb-2"><a href="#blog" class="text-white">Blog</a></li>
+            <li class="mb-2"><a href="#destinations" class="text-white">Destinations</a></li>
+            <li class="mb-2"><a href="#about" class="text-white">About</a></li>
+            <li class="mb-2"><a href="#contact" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4 mb-md-0">
+          <h5>Categories</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="/adventure.html" class="text-white">Adventure Travel</a></li>
+            <li class="mb-2"><a href="/cultural.html" class="text-white">Cultural Experiences</a></li>
+            <li class="mb-2"><a href="/food.html" class="text-white">Food & Drink</a></li>
+            <li class="mb-2"><a href="/travel-tips.html" class="text-white">Travel Tips</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Newsletter</h5>
+          <p>Subscribe for travel inspiration and tips</p>
+          <form>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Your Email">
+              <button class="btn btn-primary" type="button">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 Wanderlust Adventures. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
